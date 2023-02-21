@@ -1,0 +1,45 @@
+﻿@using CallOfDuty.Models
+@model Root
+
+
+<h1 style="color:white">Player Stats</h1>
+<link rel="stylesheet" href="~/css/Searchpage.css">
+<table class="table">
+    <tr>
+        <th style="color:white; width:25%;">Wins</th>
+        <th style="color:white; width:25%;">Kills</th>
+        <th style="color:white; width:25%;">Deaths</th>
+        <th style="color:white; width:25%;">K/D Ratio</th>
+        <th style="color:white; width:25%;">Objective Time</th>
+        <th style="color:white; width:25%;">Contracts</th>
+        <th style="color:white; width:25%;">Revives</th>
+        <th style="color:white; width:25%;">Downs</th>
+        <th style="color:white; width:25%;">Score</th>
+        <th style="color:white; width:25%;">Top 25</th>
+        <th style="color:white; width:25%;">Top 10</th>
+        <th style="color:white; width:25%;">Top 5</th>
+        <th style="color:white; width:25%;">Score Per Minute</th>
+        <th style="color:white; width:25%;">Time Played</th>
+        <th style="color:white; width:25%;">Games Played</th>
+    </tr>
+    <tr>
+        <td style="color:white; width:25%;">@Model.data.lifetime.all.properties.wins</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.all.properties.kills</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.all.properties.deaths</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.all.properties.objTime</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.all.properties.contracts</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.all.properties.revives</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.all.properties.downs</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.all.properties.score</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.all.properties.topTwentyFive</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.all.properties.topTen</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.all.properties.topFive</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.all.properties.scorePerMinute</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.all.properties.timePlayed</td>
+        <td style="color:white; width:25%;">@Model.data.lifetime.all.properties.gamesPlayed</td>
+
+    </tr>
+
+</table>
+
+<div style="display: block"></div>
